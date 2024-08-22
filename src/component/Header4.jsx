@@ -1,40 +1,36 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import contact from "../assets/contact.jpeg"
+
+
+import React, { useRef } from 'react';
+import contact from "../assets/contact.jpeg";
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const ContactPage = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+  const formRef = useRef();
 
-  const [response, setResponse] = useState(null);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    try {
-      const res = await axios.post('/api/contact', formData);
-      setResponse(res.data);
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      setResponse({ error: 'An error occurred while submitting your message. Please try again later.' });
-    }
+
+    emailjs
+      .sendForm('service_oxalojd', 'template_d4hurli', formRef.current, 'CqULToxPMRANJDGWy')
+      .then(
+        () => {
+          toast.success('Message sent successfully!');
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          toast.error('Failed to send message.');
+          console.log('FAILED...', error.text);
+        }
+      );
   };
 
   return (
     <div className="py-8 px-4 sm:px-6 lg:px-8">
       <h1 className="text-2xl font-semibold mb-4">Contact Us</h1>
-      
-      {/* Accordion Component (assuming it's imported and placed here) */}
-      {/* <Accordion /> */}
-      
+
       <div className="flex flex-col md:flex-row items-center gap-8 mt-8">
-        {/* Image Section */}
         <div className="md:w-1/2 flex justify-center">
           <img
             src={contact}
@@ -42,18 +38,15 @@ const ContactPage = () => {
             className="w-full h-auto rounded-md object-cover max-w-sm"
           />
         </div>
-        
-        {/* Form Section */}
+
         <div className="md:w-1/2">
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form ref={formRef} onSubmit={sendEmail} className="space-y-4">
             <div>
               <label htmlFor="name" className="block text-sm font-medium">Name</label>
               <input
                 type="text"
                 id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
+                name="to_name"
                 required
                 className="w-full p-3 border border-gray-300 rounded-md text-base"
               />
@@ -63,9 +56,7 @@ const ContactPage = () => {
               <input
                 type="email"
                 id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
+                name="from_name"
                 required
                 className="w-full p-3 border border-gray-300 rounded-md text-base"
               />
@@ -75,8 +66,6 @@ const ContactPage = () => {
               <textarea
                 id="message"
                 name="message"
-                value={formData.message}
-                onChange={handleChange}
                 required
                 className="w-full p-3 border border-gray-300 rounded-md text-base"
                 rows="4"
@@ -89,17 +78,9 @@ const ContactPage = () => {
               Send Message
             </button>
           </form>
-          {response && (
-            <div className="mt-4">
-              {response.error ? (
-                <p className="text-red-500">{response.error}</p>
-              ) : (
-                <p className="text-green-500">{response.message}</p>
-              )}
-            </div>
-          )}
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
