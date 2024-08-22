@@ -5,6 +5,7 @@ import Header from "../component/Header";
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
 import Accordion from "../component/Header3";
+import Header4 from "../component/Header4";
 
 const Landing = () => {
   return (
@@ -14,6 +15,7 @@ const Landing = () => {
       <Header />
       <Header2 />
       <Accordion />
+      <Header4 />
       <Footer />
     </>
   );
