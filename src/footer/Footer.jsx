@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   return (
@@ -6,10 +6,22 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-0 grid grid-cols-2 md:grid-cols-5 gap-8 pb-8">
         {/* About GoDaddy */}
         <div>
-          <h3 className="text-lg font-bold mb-4">About GoDaddy</h3>
+          <h3 className="text-lg font-bold mb-4">About GrowUpNow</h3>
           <ul className="space-y-2">
-            {["About Us", "Annual Returns", "Careers", "Contact Us", "Corporate Social Responsibility", "GoDaddy Blog", "Investor Relations", "Legal", "Newsroom", "Trust Center"].map(item => (
-              <li key={item}><a href="#" className="hover:underline">{item}</a></li>
+            {[
+              "About Us",
+              "Annual Returns",
+              "Careers",
+              "Contact Us",
+              "Corporate Social Responsibility",
+              "Legal",
+              "Trust Center",
+            ].map((item) => (
+              <li key={item}>
+                <a href="#" className="hover:underline">
+                  {item}
+                </a>
+              </li>
             ))}
           </ul>
         </div>
@@ -18,9 +30,15 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-bold mb-4">Support</h3>
           <ul className="space-y-2">
-            {["Product", "Support", "Report Abuse", "Resources"].map(item => (
-              <li key={item}><a href="#" className="hover:underline">{item}</a></li>
-            ))}
+            {["Product", "Support", "Report Abuse", "Resources", "24*7"].map(
+              (item) => (
+                <li key={item}>
+                  <a href="#" className="hover:underline">
+                    {item}
+                  </a>
+                </li>
+              )
+            )}
           </ul>
         </div>
 
@@ -28,28 +46,20 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-bold mb-4">Resources</h3>
           <ul className="space-y-2">
-            {["Webmail", "WHOIS", "ICANN Confirmation", "Designers & Developers", "Redeem Code", "Product Catalog", "Customer Testimonials", "Business Name Generator"].map(item => (
-              <li key={item}><a href="#" className="hover:underline">{item}</a></li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Partner Programs */}
-        <div>
-          <h3 className="text-lg font-bold mb-4">Partner Programs</h3>
-          <ul className="space-y-2">
-            {["Affiliates", "Reseller Programs", "GoDaddy Pro"].map(item => (
-              <li key={item}><a href="#" className="hover:underline">{item}</a></li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Account */}
-        <div>
-          <h3 className="text-lg font-bold mb-4">Account</h3>
-          <ul className="space-y-2">
-            {["My Products", "Renewals & Billing", "Create Account"].map(item => (
-              <li key={item}><a href="#" className="hover:underline">{item}</a></li>
+            {[
+              "Website",
+              "Mobile Application",
+              "Hosting",
+              "Database",
+              "Fast service",
+              "Trust",
+              "Customer Benefits",
+            ].map((item) => (
+              <li key={item}>
+                <a href="#" className="hover:underline">
+                  {item}
+                </a>
+              </li>
             ))}
           </ul>
         </div>
@@ -58,8 +68,23 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-bold mb-4">Shopping</h3>
           <ul className="space-y-2">
-            {["Buy a Domain", "Websites", "Business Email", "WordPress", "Hosting", "Web Security", "Logo Generator"].map(item => (
-              <li key={item}><a href="#" className="hover:underline">{item}</a></li>
+            {[
+              "Buy a Website",
+              "Websites",
+              "Business Email",
+              "WordPress",
+              "Hosting",
+              "MERN",
+              "SpringBoot",
+              "React Native",
+              "Web Security",
+              "Logo Generator",
+            ].map((item) => (
+              <li key={item}>
+                <a href="#" className="hover:underline">
+                  {item}
+                </a>
+              </li>
             ))}
           </ul>
         </div>
@@ -69,15 +94,23 @@ const Footer = () => {
       <div className="bg-gray-900 py-4 text-center text-gray-400">
         <div className="container mx-auto px-4 md:px-0">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm">
-            <p>&copy; 1999 - 2024 GoDaddy. All rights reserved.</p>
+            <p>&copy; 2024 GrowUpNow. All rights reserved.</p>
             <div className="flex space-x-4">
-              <a href="#" className="hover:underline">Legal</a>
-              <a href="#" className="hover:underline">Privacy Policy</a>
-              <a href="#" className="hover:underline">Cookies</a>
+              <a href="#" className="hover:underline">
+                Legal
+              </a>
+              <a href="#" className="hover:underline">
+                Privacy Policy
+              </a>
+              <a href="#" className="hover:underline">
+                Cookies
+              </a>
             </div>
           </div>
           <p className="text-sm mt-2">
-            Use of this Site is subject to express terms of use. By using this site, you signify that you agree to be bound by these Universal Terms of Service.
+            Use of this Site is subject to express terms of use. By using this
+            site, you signify that you agree to be bound by these Universal
+            Terms of Service.
           </p>
         </div>
       </div>
