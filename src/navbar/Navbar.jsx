@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import navbar from "../assets/navbar.jpeg";
+import { Link } from "react-router-dom";
+import toast from "react-hot-toast";
+import { ScrollLink } from "react-scroll";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -26,11 +29,21 @@ const Navbar = () => {
               "Pricing",
               "Contact Us",
               "Help",
-            ].map((item) => (
-              <a key={item} href="#" className="hover:text-gray-700">
-                {item}
-              </a>
-            ))}
+            ].map((item) =>
+                item === "Contact Us" || item === "Help" ? (
+                    <a
+                      key={item}
+                      href="#contact"
+                      className="block text-gray-800 hover:text-gray-700 cursor-pointer"
+                    >
+                      {item}
+                    </a>
+                  ) : (
+                    <span key={item} className="block text-gray-800 hover:text-gray-700 cursor-pointer">
+                      {item}
+                    </span>
+                  )
+            )}
           </nav>
 
           <button className="hidden md:block hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2"></button>
@@ -91,13 +104,19 @@ const Navbar = () => {
                 "Help",
                 "Sign In",
               ].map((item) => (
-                <a
-                  key={item}
-                  href="#"
-                  className="block text-gray-800 hover:text-gray-700"
-                >
-                  {item}
-                </a>
+                item === "Contact Us" || item === "Help" ? (
+                    <a
+                      key={item}
+                      href="#contact"
+                      className="block text-gray-800 hover:text-gray-700 cursor-pointer"
+                    >
+                      {item}
+                    </a>
+                  ) : (
+                    <span key={item} className="block text-gray-800 hover:text-gray-700 cursor-pointer">
+                      {item}
+                    </span>
+                  )
               ))}
               <button className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
                 See Plans

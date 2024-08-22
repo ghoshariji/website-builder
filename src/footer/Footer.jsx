@@ -1,6 +1,9 @@
 import React from "react";
-
+import {Link as ScrollLink} from "react-scroll"
 const Footer = () => {
+    const handleScrollw = () =>{
+
+    }
   return (
     <footer className="bg-black text-white pt-12">
       <div className="container mx-auto px-4 md:px-0 grid grid-cols-2 md:grid-cols-5 gap-10 pb-10 lg:pl-20">
@@ -117,8 +120,10 @@ const Footer = () => {
 
       {/* Contact Us */}
       <div className="bg-black py-4 text-white text-center">
-        <button className="bg-white text-black font-bold py-2 px-6 rounded-full shadow-md hover:bg-gray-300">
-          Contact Us
+        <button className="bg-white text-black font-bold py-2 px-6 rounded-full shadow-md hover:bg-gray-300" >
+        <li style={{cursor:"pointer"}} >
+            <ScrollLink to="contact" smooth={true} duration={300} >Connect Us</ScrollLink>
+          </li>
         </button>
       </div>
     </footer>
