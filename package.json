@@ -16,11 +16,8 @@
     "react-dom": "^18.3.1",
     "react-hot-toast": "^2.4.1",
     "react-router-dom": "^6.26.1",
-<<<<<<< HEAD
+    "react-scroll": "^1.9.0",
     "react-toastify": "^10.0.5"
-=======
-    "react-scroll": "^1.9.0"
->>>>>>> 98a97daa892c6abf3a6c1d25c04d48f79414a4ef
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

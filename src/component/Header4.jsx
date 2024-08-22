@@ -43,7 +43,7 @@ const ContactPage = () => {
         <div className="md:w-1/2">
           <form ref={formRef} onSubmit={sendEmail} className="space-y-4">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium">Name</label>
+              <label htmlFor="name" className="block text-sm font-medium">Name : </label>
               <input
                 type="text"
                 id="name"
@@ -53,7 +53,7 @@ const ContactPage = () => {
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium">Email</label>
+              <label htmlFor="email" className="block text-sm font-medium">Email : </label>
               <input
                 type="email"
                 id="email"
@@ -63,7 +63,7 @@ const ContactPage = () => {
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm font-medium">Message</label>
+              <label htmlFor="message" className="block text-sm font-medium">Message : </label>
               <textarea
                 id="message"
                 name="message"
