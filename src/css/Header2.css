@@ -1,0 +1,112 @@
+.App{
+    margin-top:50px;
+    text-align: center;
+}
+.title{
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.image-wrapper{
+    margin: 0px 30px;
+}
+.image-wrapper img{
+    height: 300px;
+    width: 400px;
+}
+.image-wrapper-1 img{
+    width: 80%;
+}
+
+.image-wrapper img:hover{
+    opacity: 1;
+}
+
+
+.image-wrapper img,
+.image-wrapper-1 img {
+  transition: opacity 0.3s ease; 
+  opacity: 0.7; 
+}
+
+
+.image-wrapper img:hover,
+.image-wrapper-1 img:hover {
+  
+  opacity: 1; 
+}
+
+.controls {
+    margin-top: 30px;
+  }
+  
+  .controls button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 60rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .controls button:hover {
+    background-color: #0056b3; 
+  }
+  
+  .controls button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .controls button:active {
+    background-color: #004494; 
+  }
+  
+
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+  
+    .image-wrapper img {
+      height: 250px;
+      width: 350px;
+    }
+  
+    .controls button {
+      font-size: 16px;
+      margin-left: 40rem; 
+    }
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 480px) {
+    .title {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+  
+    .image-wrapper img {
+      height: 200px;
+      width: 300px;
+    }
+  
+    .controls button {
+      font-size: 14px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-top: 20px; 
+    }
+  
+    .image-wrapper,
+    .image-wrapper-1 {
+      margin: 0px 10px;
+    }
+  }
