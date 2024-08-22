@@ -1,9 +1,13 @@
 import React from "react";
 import header1 from "../assets/header1.jpeg";
+import toast, { Toaster } from "react-hot-toast";
+import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 const Header1 = () => {
   return (
     <>
       <div className="min-h-screen flex flex-col items-center justify-center bg-white">
+        <Toaster />
         <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10 p-6">
           {/* Image section */}
           <div className="w-full lg:w-1/2 flex justify-center">
@@ -25,9 +29,17 @@ const Header1 = () => {
             </p>
             <div className="flex flex-col lg:flex-row items-center gap-4">
               <button className="bg-black text-white py-3 px-6 rounded-full font-semibold transition hover:bg-gray-800">
-                Getting Started
+                <li style={{ cursor: "pointer" }}>
+                  <ScrollLink to="about" smooth={true} duration={200}>
+                    {" "}
+                    Getting Started
+                  </ScrollLink>
+                </li>
               </button>
-              <button className="border border-gray-300 py-3 px-6 rounded-full font-semibold transition hover:bg-gray-100">
+              <button
+                className="border border-gray-300 py-3 px-6 rounded-full font-semibold transition hover:bg-gray-100"
+                onClick={() => toast.success("Comming soon")}
+              >
                 See Plans and Pricing
               </button>
             </div>
@@ -60,17 +72,17 @@ const Header1 = () => {
           className="flex items-center justify-center p-3 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition-transform transform hover:scale-105"
         >
           <svg
-            className="w-10 h-10"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="size-6"
           >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth="2"
-              d="M3 3h18v18H3V3zM15.35 14.65l-2.8-2.8a2.53 2.53 0 00-1.72-.71c-.69 0-1.39.27-1.72.71l-.75.76a.67.67 0 01-.68.15c-.11-.05-.22-.1-.33-.15l-1.45-.95a.67.67 0 01-.23-.8c.1-.37.28-.71.54-.98l.65-.66a3.59 3.59 0 01.54-.37c.24-.09.5-.14.76-.14.75 0 1.48.29 2.03.84l2.8 2.8c.32.32.32.85 0 1.17-.31.31-.84.31-1.16 0z"
+              d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
             />
           </svg>
         </a>
@@ -81,23 +93,20 @@ const Header1 = () => {
           className="flex items-center justify-center p-3 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-600 transition-transform transform hover:scale-105"
         >
           <svg
-            className="w-10 h-10"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="size-6"
           >
             <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"
+              fillRule="evenodd"
+              d="M15 3.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0V5.56l-4.72 4.72a.75.75 0 1 1-1.06-1.06l4.72-4.72h-2.69a.75.75 0 0 1-.75-.75Z"
+              clipRule="evenodd"
             />
             <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M6 10h12v4H6v-4z"
+              fillRule="evenodd"
+              d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+              clipRule="evenodd"
             />
           </svg>
         </a>

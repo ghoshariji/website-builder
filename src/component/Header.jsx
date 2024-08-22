@@ -2,6 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
+    <section id="about">
     <div className="bg-gray-50 py-8 px-4 md:px-8 lg:px-7">
       <div className="container mx-auto text-center">
         {/* Title Section */}
@@ -64,7 +65,7 @@ const Header = () => {
         {/* Contact Information */}
         <div className="mt-12 bg-white p-6 rounded-lg shadow-lg">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">
-            Get in Touch
+          Contact Us (24 * 7)
           </h2>
           <p className="text-lg text-gray-700 mb-4">
             Ready to bring your idea to life? Contact us today to discuss your
@@ -177,6 +178,7 @@ const Header = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

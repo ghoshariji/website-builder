@@ -27,8 +27,10 @@ const ContactPage = () => {
   };
 
   return (
+    <section id='contact'>
     <div className="py-8 px-4 sm:px-6 lg:px-8">
-      <h1 className="text-2xl font-semibold mb-4">Contact Us</h1>
+    <h1 className="text-2xl font-bold mb-4">Contact Us</h1>
+
       
       {/* Accordion Component (assuming it's imported and placed here) */}
       {/* <Accordion /> */}
@@ -101,6 +103,7 @@ const ContactPage = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
