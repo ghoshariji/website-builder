@@ -89,7 +89,7 @@ const Header1 = () => {
 
         {/* Button for Call */}
         <a
-          href="tel:+7439120030"
+          href="tel:7439120030"
           className="flex items-center justify-center p-3 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-600 transition-transform transform hover:scale-105"
         >
           <svg

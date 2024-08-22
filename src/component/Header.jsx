@@ -90,7 +90,7 @@ const Header = () => {
               <span className="text-lg font-medium">
                 Call us:{" "}
                 <a
-                  href="tel:+7439120030"
+                  href="tel:7439120030"
                   className="text-green-600 hover:underline"
                 >
                       +91-7439120030
@@ -142,7 +142,7 @@ const Header = () => {
               <span className="text-lg font-medium">
                 Call us:{" "}
                 <a
-                  href="tel:+7439120030"
+                  href="tel:9832394372"
                   className="text-green-600 hover:underline"
                 >
                    +91-9832394372
