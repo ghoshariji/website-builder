@@ -10,7 +10,7 @@ const ContactPage = () => {
   const formRef = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     emailjs
       .sendForm('service_oxalojd', 'template_d4hurli', formRef.current, 'CqULToxPMRANJDGWy')
