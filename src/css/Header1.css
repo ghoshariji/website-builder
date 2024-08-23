@@ -28,7 +28,7 @@
     flex-direction: row;
     align-items: center;
     /* background: url(../assets/background-image.jpg)no-repeat; */
-    background: linear-gradient(to left,red,orange,yellow);
+    background: linear-gradient(to left,yellow,orange,red);
     background-size: cover;
     background-position: center;
     flex-wrap: wrap;
@@ -247,7 +247,7 @@
         font-size: 2rem; /* Adjust font size for mobile */
     }
     .homedada .contentdada p {
-        font-size: 0.8rem; /* Adjust font size for mobile */
+        font-size: 1rem; /* Adjust font size for mobile */
     }
 }
 
