@@ -1,11 +1,96 @@
-import React from "react";
+import React, { useEffect } from "react";
+import $ from "jquery";
 import header1 from "../assets/header1.jpeg";
+import marketing from "../assets/marketing-campaign-image.png";
 import toast, { Toaster } from "react-hot-toast";
 import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "../css/Header1.css";
 const Header1 = () => {
+
+
+  useEffect(() => {
+    $(document).ready(function () {
+      $('.numberdada').each(function () {
+        // Strip non-numeric characters from the text value
+        const targetValue = parseInt($(this).text().replace(/\D/g, ''));
+        const initialValue = 999; // Start counting from 0
+        
+        // Animate only if targetValue is greater than initialValue
+        if (targetValue > initialValue) {
+          $(this)
+            .prop('Counter', initialValue)
+            .animate(
+              {
+                Counter: targetValue,
+              },
+              {
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                  $(this).text(Math.ceil(now) + '+');
+                },
+              }
+            );
+        }
+      });
+    });
+  }, []);
+  
+
   return (
-    <>
+    
+    <div className="Maindada">
+      <section className="homedada" id="homedada">
+        <div className="contentdada">
+          <h3>Grow your business with us</h3>
+          <p>
+            We offer tailored solutions that align with your specific needs,
+            whether it’s through digital marketing, strategic planning, or
+            enhancing operational efficiency. Our team of experts works closely
+            with you to understand your vision and develop a customized growth
+            plan. By leveraging the latest technologies and industry insights,
+            we ensure that your business stays ahead of the competition.
+          </p>
+          <NavLink to="/" className="btn">
+            Discover More
+          </NavLink>
+        </div>
+
+        <div className="imagedada">
+          <img src={marketing} />
+        </div>
+      </section>
+
+      <div className="containerdada">
+        <div className="counterdada">
+          <i className="fas fa-code"></i>
+          <span className="numberdada">2000</span>
+          <h3>Web Design</h3>
+        </div>
+
+        <div className="counterdada">
+          <i className="fas fa-tools"></i>
+          <span className="numberdada">2840</span>
+          <h3>Web Development</h3>
+        </div>
+
+
+
+        <div className="counterdada">
+          <i className="fas fa-paint-brush"></i>
+          <span className="numberdada">3000</span>
+          <h3>Responsive Design</h3>
+        </div>
+
+        <div className="counterdada">
+        <i className="fas fa-bullhorn"></i>
+        <span className="numberdada">2020</span>
+        <h3>FullTStack Website</h3>
+      </div>
+      </div>
+
       <div className="min-h-screen flex flex-col items-center justify-center bg-white">
         <Toaster />
         <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10 p-6">
@@ -111,7 +196,7 @@ const Header1 = () => {
           </svg>
         </a>
       </div>
-    </>
+    </div>
   );
 };
 

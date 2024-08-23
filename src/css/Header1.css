@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;800&display=swap');
+
+:root{
+    --black:#192a56;
+    --orange:#F95F1D;
+    --yellow:#ffa801;
+
+}
+*{
+    font-family: 'Nunito Sans',sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: .2s linear;
+}
+
+#homedada{
+    padding: 0 7%;
+    padding-top: 7.5rem;
+    padding-bottom: 3rem;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+ .homedada{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background: url(../assets/background-image.jpg)no-repeat; */
+    background: linear-gradient(to left,red,orange,yellow);
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.homedada .imagedada{
+    padding-top: 4rem;
+    flex: 1 1 50%;
+    order: 2;
+   
+}
+
+.homedada .contentdada{
+    padding: 1rem;
+    flex: 1 1 50%;
+    order: 1;
+}
+.homedada .contentdada h3{
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.homedada .contentdada p{
+    color: #fff;
+    font-size: 1rem;
+    
+}
+.homedada .imagedada img{
+   width: 100%;
+   height: auto;
+   animation: zoomInAndMove 2s infinite;
+}
+
+@keyframes zoomInAndMove {
+    0% {
+        transform: scale(1) translateY(0);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.1) translateY(-10px);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) translateY(0);
+        opacity: 0.5;
+    }
+}
+
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .7rem 1.2rem;
+    font-size: 1.2rem;
+    color: var(--yellow);
+    border: .2rem solid var(--yellow);
+    cursor: pointer;
+  
+}
+
+.btn:hover{
+    background: var(--yellow);
+    color: #fff;
+}
+
+.homedada .contentdada .btn{
+    color: #444;
+    background: #fff;
+}
+
+
+.homedada .contentdada .btn:hover{
+    color: #fff;
+    background: none;
+}
+
+
+.containerdada{
+    min-height: 50vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.counterdada{
+    height: 200px;
+    width: 200px;
+    background: #3498db;
+    color: #fff;
+    margin: 40px;
+    padding: 7px 30px 0;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+.counterdada::before,
+.counterdada::after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1;
+    background: linear-gradient(#555,#333,39%,transparent 39%);
+    border-radius: 50%;
+
+}
+
+.counterdada::after{
+   transform: rotateX(180deg);
+}
+
+.counterdada i{
+   font-size: 40px;
+   margin: 10px auto;
+}
+
+.counterdada .numberdada{
+    font-size: 35px;
+    display: block;
+    margin: 14px 0;
+}
+
+.counterdada h3{
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 15px 0;
+    text-transform: uppercase;
+
+}
+
+.counterdada:nth-child(2){
+    background: #e74c3c;
+}
+
+.counterdada:nth-child(3){
+    background: #f39c12;
+}
+.counterdada:nth-child(2){
+    background: #9b59b6;
+}
+
+
+@media (max-width: 991px) {
+    section {
+        padding: 0 3%;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+    .homedada {
+        flex-direction: column; /* Stack items vertically on tablet screens */
+    }
+    .homedada .contentdada, .homedada .imagedada {
+        width: 100%;
+        text-align: center;
+    }
+    .homedada .contentdada h3 {
+        font-size: 2.5rem; /* Adjust font size for tablets */
+    }
+    .homedada .contentdada p {
+        font-size: 0.9rem; /* Adjust font size for tablets */
+    }
+    .Maindada{
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 820px) and (min-width: 768px) {
+    section {
+        padding: 0 5%;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+    .homedada {
+        flex-direction: column; /* Stack items vertically on iPad screens */
+    }
+    .homedada .contentdada, .homedada .imagedada {
+        width: 100%;
+        text-align: center;
+    }
+    .homedada .contentdada h3 {
+        font-size: 2.5rem; /* Adjust font size for iPad */
+    }
+    .homedada .contentdada p {
+        font-size: 0.9rem; /* Adjust font size for iPad */
+    }
+    .Maindada {
+        overflow-x: hidden; /* Ensure horizontal overflow is hidden */
+    }
+}
+
+
+
+@media (max-width: 760px) {
+    section {
+        padding: 0 3%;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        overflow-x: hidden; /* Hide horizontal overflow */
+    }
+    .homedada {
+        flex-direction: column; /* Stack items vertically on mobile screens */
+    }
+    .homedada .contentdada, .homedada .imagedada {
+        width: 100%;
+        text-align: center;
+    }
+    .homedada .contentdada h3 {
+        font-size: 2rem; /* Adjust font size for mobile */
+    }
+    .homedada .contentdada p {
+        font-size: 0.8rem; /* Adjust font size for mobile */
+    }
+}
+
+
+/* $document.ready(function(){
+    $('.numberdada').each(function(){
+        $(this).prop('Counter',0).animate({
+            Counter:$(this).text();
+        },{
+            duration:4000,
+            easing:'swing',
+            step:function(now){
+                $(this).text(Math.ceil(now) + '+');
+            }
+        })
+    })
+}) */

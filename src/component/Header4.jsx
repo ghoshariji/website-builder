@@ -88,7 +88,8 @@ const ContactPage = () => {
     <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3424.333204763389!2d76.86975947495951!3d30.87733847451471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ff55d9e0ed113%3A0x34a6cadf9a13d341!2sCHITKARA%20UNIVERSITY%2C%20BADDI!5e0!3m2!1sen!2sin!4v1722003923018!5m2!1sen!2sin"
     width="100%"
-    height="450"
+    overflow-x="hidden"
+    height="350"
     marginBottom="3rem"
     allowFullScreen=""
     loading="lazy"
