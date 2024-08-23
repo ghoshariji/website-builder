@@ -115,7 +115,7 @@ const Header = () => {
               <span className="text-lg font-medium">
                 Email us:{" "}
                 <a
-                  href="mailto:arijit@gmail.com"
+                  href="mailto:arijitghosh1203@gmail.com"
                   className="text-green-600 hover:underline"
                 >
                   arijitghosh1203@gmail.com
@@ -167,7 +167,7 @@ const Header = () => {
               <span className="text-lg font-medium">
                 Email us:{" "}
                 <a
-                  href="mailto:arijit@gmail.com"
+                  href="mailto:niladri30012003@gmail.com"
                   className="text-green-600 hover:underline"
                 >
                  niladri30012003@gmail.com

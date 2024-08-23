@@ -7,6 +7,8 @@ import Footer from "../footer/Footer";
 import Accordion from "../component/Header3";
 
 import ContactPage from "../component/Header4";
+import Mobile from "../component/Mobile";
+import Website from "../component/Website";
 
 const Landing = () => {
   return (
@@ -14,7 +16,10 @@ const Landing = () => {
       <Navbar />
       <Header1 />
       <Header />
+      <Mobile />
       <Header2 />
+      
+      <Website />
       <Accordion />
       <ContactPage />
       <Footer />
