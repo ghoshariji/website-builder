@@ -1,36 +1,37 @@
 import React, { useState } from "react";
 import Marquee from "react-fast-marquee";
 import "../css/Header2.css";
-import a from "../assets/responsive image.png"
-import b from "../assets/Ecommerce.jpg"
-import c from "../assets/Blogging.webp"
-import d from "../assets/Job-portal.jpg"
-import e from "../assets/portfolio.jpg"
-import f from "../assets/Tiket.jpg"
-import l from "../assets/one.png"
-import g from "../assets/Boeing.png"
-import h from "../assets/cisco.png"
-import i from "../assets/Penn.png"
-import j from "../assets/seven.png"
-import k from "../assets/ten.png"
+import a from "../assets/responsive image.png";
+import b from "../assets/Ecommerce.jpg";
+import c from "../assets/Blogging.webp";
+import d from "../assets/Job-portal.jpg";
+import e from "../assets/portfolio.jpg";
+import f from "../assets/Tiket.jpg";
+import l from "../assets/one.png";
+import g from "../assets/Boeing.png";
+import h from "../assets/cisco.png";
+import i from "../assets/Penn.png";
+import j from "../assets/seven.png";
+import k from "../assets/ten.png";
 
 const Header2 = () => {
-  // const [isPaused, setIsPaused] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
 
-  // const togglePause = () => {
-  //   setIsPaused(!isPaused);
-  // };
+  const togglePause = () => {
+    setIsPaused(!isPaused);
+  };
 
   return (
     <div className="App">
       <div className="title">
-        <h1 className="font-bold">
-          Whatever website you'll build, it'll look good.
+        <h1>
+          <b>
+            Whatever <span style={{ color: "green" }}>website you'll build,</span> it'll look good.
+          </b>
         </h1>
-        <h1> <b>Whatever <span style={{color:"green"}}> website you'll build, </span> it'll look good.</b></h1>
       </div>
       <div>
-        <Marquee direction="left" speed={100} delay={2}>
+        <Marquee direction="left" speed={100} delay={2} pauseOnHover={!isPaused} play={!isPaused}>
           <div className="image-wrapper">
             <img src={a} alt="Responsive Design" />
           </div>
@@ -57,24 +58,16 @@ const Header2 = () => {
         </Marquee>
       </div>
 
-      {/* <div className="title">
-        <h1 style={{ marginTop: "6rem" }}>
-          {" "}
+      {/** Commented-out second Marquee for reference, this can be uncommented and used if needed
+      <div className="title" style={{ marginTop: "6rem" }}>
+        <h1>
           <b>
-            {" "}
-            <span style={{ color: "green" }}> Organizations</span>
-          </b>{" "}
-          that trust us.
+            <span style={{ color: "green" }}>Organizations</span> that trust us.
+          </b>
         </h1>
-      </div> */}
-      {/* <div>
-        <Marquee  direction="right" speed={100} delay={2}>
-
-    {/**   <div className="title">
-        <h1 style={{marginTop:"6rem" }}> <b> <span style={{color:"green"}}> Organizations</span></b> that trust us.</h1>
       </div>
       <div>
-        <Marquee pauseOnHover={!isPaused} play={!isPaused} direction="right" speed={100} delay={5}>
+        <Marquee pauseOnHover={!isPaused} play={!isPaused} direction="right" speed={100} delay={2}>
           <div className="image-wrapper-1">
             <img src={l} alt="Company 1" />
           </div>
@@ -99,18 +92,13 @@ const Header2 = () => {
             <img src={k} alt="Company 10" />
           </div>
         </Marquee>
-      </div> */}
       </div>**/}
 
-
-      {/* <div className="controls">
+      <div className="controls">
         <button onClick={togglePause}>
           {isPaused ? "Resume" : "Pause"}
         </button>
-      </div> */}
       </div>
-
-     
     </div>
   );
 };
