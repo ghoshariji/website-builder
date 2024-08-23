@@ -175,6 +175,58 @@ const Header = () => {
               </span>
             </div>
           </div>
+          <div className="flex flex-col md:flex-row justify-center items-start space-y-4 md:space-y-0 md:space-x-8">
+            <div className="flex items-center">
+              <svg
+                className="w-6 h-6 text-green-600 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M3 10h2a4 4 0 014 4v4a4 4 0 01-4 4H3a4 4 0 01-4-4v-4a4 4 0 014-4z"
+                ></path>
+              </svg>
+              <span className="text-lg font-medium">
+                Call us:{" "}
+                <a
+                  href="tel:9641610663"
+                  className="text-green-600 hover:underline"
+                >
+                   +91-9641610663
+                </a>
+              </span>
+            </div>
+            <div className="flex items-center">
+              <svg
+                className="w-6 h-6 text-green-600 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6V3a1 1 0 011-1h14a1 1 0 011 1v3m0 0v12a1 1 0 01-1 1H5a1 1 0 01-1-1V6zm0 0l4 4m0 0l4-4m-4 4V3"
+                ></path>
+              </svg>
+              <span className="text-lg font-medium">
+                Email us:{" "}
+                <a
+                  href="mailto:acharyaanupam72@gmail.com"
+                  className="text-green-600 hover:underline"
+                >
+                 acharyaanupam72@gmail.com
+                </a>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
