@@ -14,7 +14,7 @@ const Header2 = () => {
   return (
     <div className="App">
       <div className="title">
-        <h1>Whatever website you'll build, it'll look good.</h1>
+        <h1> <b>Whatever <span style={{color:"green"}}> website you'll build, </span> it'll look good.</b></h1>
       </div>
       <div>
         <Marquee pauseOnHover={!isPaused} play={!isPaused} direction="left" speed={100} delay={5}>
@@ -44,7 +44,8 @@ const Header2 = () => {
         </Marquee>
       </div>
 
-      <div className="title">
+
+    {/**   <div className="title">
         <h1 style={{marginTop:"6rem" }}> <b> <span style={{color:"green"}}> Organizations</span></b> that trust us.</h1>
       </div>
       <div>
@@ -73,13 +74,16 @@ const Header2 = () => {
             <img src="public/ten.png" alt="Company 10" />
           </div>
         </Marquee>
-      </div>
+      </div>**/}
+
 
       <div className="controls">
         <button onClick={togglePause}>
           {isPaused ? "Resume" : "Pause"}
         </button>
       </div>
+
+     
     </div>
   );
 };
