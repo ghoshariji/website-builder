@@ -1,49 +1,74 @@
-
-
 import React, { useState } from "react";
 import Marquee from "react-fast-marquee";
 import "../css/Header2.css";
+import a from "../assets/responsive image.png"
+import b from "../assets/Ecommerce.jpg"
+import c from "../assets/Blogging.webp"
+import d from "../assets/Job-portal.jpg"
+import e from "../assets/portfolio.jpg"
+import f from "../assets/Tiket.jpg"
+import l from "../assets/one.png"
+import g from "../assets/Boeing.png"
+import h from "../assets/cisco.png"
+import i from "../assets/Penn.png"
+import j from "../assets/seven.png"
+import k from "../assets/ten.png"
 
 const Header2 = () => {
-  const [isPaused, setIsPaused] = useState(false);
+  // const [isPaused, setIsPaused] = useState(false);
 
-  const togglePause = () => {
-    setIsPaused(!isPaused);
-  };
+  // const togglePause = () => {
+  //   setIsPaused(!isPaused);
+  // };
 
   return (
     <div className="App">
       <div className="title">
+        <h1 className="font-bold">
+          Whatever website you'll build, it'll look good.
+        </h1>
         <h1> <b>Whatever <span style={{color:"green"}}> website you'll build, </span> it'll look good.</b></h1>
       </div>
       <div>
-        <Marquee pauseOnHover={!isPaused} play={!isPaused} direction="left" speed={100} delay={5}>
+        <Marquee direction="left" speed={100} delay={2}>
           <div className="image-wrapper">
-            <img src="public/responsive image.png" alt="Responsive Design" />
+            <img src={a} alt="Responsive Design" />
           </div>
 
           <div className="image-wrapper">
-            <img src="public/Ecommerce.jpg" alt="Ecommerce" />
+            <img src={b} alt="Ecommerce" />
           </div>
 
           <div className="image-wrapper">
-            <img src="public/Blogging.webp" alt="Blogging" />
+            <img src={c} alt="Blogging" />
           </div>
 
           <div className="image-wrapper">
-            <img src="public/Job-portal.jpg" alt="Job Portal" />
+            <img src={d} alt="Job Portal" />
           </div>
 
           <div className="image-wrapper">
-            <img src="public/portfolio.jpg" alt="Portfolio" />
+            <img src={e} alt="Portfolio" />
           </div>
 
           <div className="image-wrapper">
-            <img src="public/Tiket.jpg" alt="Ticketing System" />
+            <img src={f} alt="Ticketing System" />
           </div>
         </Marquee>
       </div>
 
+      {/* <div className="title">
+        <h1 style={{ marginTop: "6rem" }}>
+          {" "}
+          <b>
+            {" "}
+            <span style={{ color: "green" }}> Organizations</span>
+          </b>{" "}
+          that trust us.
+        </h1>
+      </div> */}
+      {/* <div>
+        <Marquee  direction="right" speed={100} delay={2}>
 
     {/**   <div className="title">
         <h1 style={{marginTop:"6rem" }}> <b> <span style={{color:"green"}}> Organizations</span></b> that trust us.</h1>
@@ -51,36 +76,38 @@ const Header2 = () => {
       <div>
         <Marquee pauseOnHover={!isPaused} play={!isPaused} direction="right" speed={100} delay={5}>
           <div className="image-wrapper-1">
-            <img src="public/one.png" alt="Company 1" />
+            <img src={l} alt="Company 1" />
           </div>
 
           <div className="image-wrapper-1">
-            <img src="public/Boeing.png" alt="Boeing" />
+            <img src={g} alt="Boeing" />
           </div>
 
           <div className="image-wrapper-1">
-            <img src="public/cisco.png" alt="Cisco" />
+            <img src={h} alt="Cisco" />
           </div>
 
           <div className="image-wrapper-1">
-            <img src="public/Penn.png" alt="Penn" />
+            <img src={i} alt="Penn" />
           </div>
 
           <div className="image-wrapper-1">
-            <img src="public/seven.png" alt="Company 7" />
+            <img src={j} alt="Company 7" />
           </div>
 
           <div className="image-wrapper-1">
-            <img src="public/ten.png" alt="Company 10" />
+            <img src={k} alt="Company 10" />
           </div>
         </Marquee>
+      </div> */}
       </div>**/}
 
 
-      <div className="controls">
+      {/* <div className="controls">
         <button onClick={togglePause}>
           {isPaused ? "Resume" : "Pause"}
         </button>
+      </div> */}
       </div>
 
      
@@ -89,4 +116,3 @@ const Header2 = () => {
 };
 
 export default Header2;
-

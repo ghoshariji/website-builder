@@ -21,29 +21,47 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-4">
             {[
-              "Website",
-              "Mobile Application",
-              "Hosting",
-              "Plannig",
+              "Domains",
+              "Websites and Hosting",
+              "Email",
+              "Security",
               "Marketing",
               "Pricing",
               "Contact Us",
               "Help",
-            ].map((item) =>
-                item === "Contact Us" || item === "Help" ? (
-                    <a
-                      key={item}
-                      href="#contact"
-                      className="block text-gray-800 hover:text-gray-700 cursor-pointer"
-                    >
-                      {item}
-                    </a>
-                  ) : (
-                    <span key={item} className="block text-gray-800 hover:text-gray-700 cursor-pointer">
-                      {item}
-                    </span>
-                  )
-            )}
+              "Sign In",
+            ].map((item) => {
+              if (item === "Contact Us" || item === "Help") {
+                return (
+                  <a
+                    key={item}
+                    href="#contact"
+                    className="block text-gray-800 hover:text-gray-700 cursor-pointer"
+                  >
+                    {item}
+                  </a>
+                );
+              } else if (item === "Websites and Hosting") {
+                return (
+                  <a
+                    key={item}
+                    href="#mobile"
+                    className="block text-gray-800 hover:text-gray-700 cursor-pointer"
+                  >
+                    {item}
+                  </a>
+                );
+              } else {
+                return (
+                  <span
+                    key={item}
+                    className="block text-gray-800 hover:text-gray-700 cursor-pointer"
+                  >
+                    {item}
+                  </span>
+                );
+              }
+            })}
           </nav>
 
           <button className="hidden md:block hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2"></button>
@@ -103,8 +121,9 @@ const Navbar = () => {
                 "Contact Us",
                 "Help",
                 "Sign In",
-              ].map((item) => (
-                item === "Contact Us" || item === "Help" ? (
+              ].map((item) => {
+                if (item === "Contact Us" || item === "Help") {
+                  return (
                     <a
                       key={item}
                       href="#contact"
@@ -112,12 +131,29 @@ const Navbar = () => {
                     >
                       {item}
                     </a>
-                  ) : (
-                    <span key={item} className="block text-gray-800 hover:text-gray-700 cursor-pointer">
+                  );
+                } else if (item === "Websites and Hosting") {
+                  return (
+                    <a
+                      key={item}
+                      href="#mobile"
+                      className="block text-gray-800 hover:text-gray-700 cursor-pointer"
+                    >
+                      {item}
+                    </a>
+                  );
+                } else {
+                  return (
+                    <span
+                      key={item}
+                      className="block text-gray-800 hover:text-gray-700 cursor-pointer"
+                    >
                       {item}
                     </span>
-                  )
-              ))}
+                  );
+                }
+              })}
+
               <button className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
                 See Plans
               </button>
