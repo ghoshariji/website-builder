@@ -86,7 +86,7 @@
   }
   
   /* Mobile Styles */
-  @media (max-width: 480px) {
+  @media (max-width: 680px) {
     .title {
       font-size: 24px;
       margin-bottom: 30px;
@@ -110,3 +110,5 @@
       margin: 0px 10px;
     }
   }
+
+  
