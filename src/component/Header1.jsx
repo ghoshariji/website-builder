@@ -48,10 +48,7 @@ const Header1 = () => {
           <p>
             We offer tailored solutions that align with your specific needs,
             whether it’s through digital marketing, strategic planning, or
-            enhancing operational efficiency. Our team of experts works closely
-            with you to understand your vision and develop a customized growth
-            plan. By leveraging the latest technologies and industry insights,
-            we ensure that your business stays ahead of the competition.
+            enhancing operational efficiency.l
           </p>
           <NavLink to="/" className="btn">
             Discover More
