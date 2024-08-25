@@ -22,9 +22,10 @@ const Header2 = () => {
   };
 
   return (
-    <div className="App">
+    <div >
+    <div className="App" style={{ overflowX: "hidden" }}>
       <div className="title">
-        <h1>
+        <h1 style={{padding:'2px',margin:'2px'}}>
           <b>
             Whatever <span style={{ color: "green" }}>website you'll build,</span> it'll look good.
           </b>
@@ -99,6 +100,7 @@ const Header2 = () => {
           {isPaused ? "Resume" : "Pause"}
         </button>
       </div>
+    </div>
     </div>
   );
 };

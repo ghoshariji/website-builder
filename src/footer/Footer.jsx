@@ -5,6 +5,7 @@ const Footer = () => {
 
     }
   return (
+    <div>
     <footer className="bg-black text-white pt-12">
       <div className="container mx-auto px-4 md:px-0 grid grid-cols-2 md:grid-cols-5 gap-10 pb-10 lg:pl-20">
         {/* About GoDaddy */}
@@ -127,6 +128,7 @@ const Footer = () => {
         </button>
       </div>
     </footer>
+    </div>
   );
 };
 

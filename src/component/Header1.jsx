@@ -40,7 +40,7 @@ const Header1 = () => {
   
 
   return (
-    
+    <div>
     <div className="Maindada">
       <section className="homedada" id="homedada">
         <div className="contentdada">
@@ -48,11 +48,11 @@ const Header1 = () => {
           <p>
             We offer tailored solutions that align with your specific needs,
             whether it’s through digital marketing, strategic planning, or
-            enhancing operational efficiency.l
+            enhancing operational efficiency.
           </p>
-          <NavLink to="/" className="btn">
-            Discover More
-          </NavLink>
+          <a href="#contact" className="btn">
+            Getting Started
+          </a>
         </div>
 
         <div className="imagedada">
@@ -63,28 +63,28 @@ const Header1 = () => {
       <div className="containerdada">
         <div className="counterdada">
           <i className="fas fa-code"></i>
-          <span className="numberdada">2000</span>
-          <h3>Web Design</h3>
+          <span className="numberdada">30+</span>
+          <h3>App Development</h3>
         </div>
 
         <div className="counterdada">
           <i className="fas fa-tools"></i>
-          <span className="numberdada">2840</span>
-          <h3>Web Development</h3>
+          <span className="numberdada">25+</span>
+          <h3>Website Development</h3>
         </div>
 
 
 
         <div className="counterdada">
           <i className="fas fa-paint-brush"></i>
-          <span className="numberdada">3000</span>
-          <h3>Responsive Design</h3>
+          <span className="numberdada">1500</span>
+          <h3>Grow Up Now</h3>
         </div>
 
         <div className="counterdada">
         <i className="fas fa-bullhorn"></i>
-        <span className="numberdada">2020</span>
-        <h3>FullTStack Website</h3>
+        <span className="numberdada">45+</span>
+        <h3>Hosting</h3>
       </div>
       </div>
 
@@ -143,9 +143,7 @@ const Header1 = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="fixed bottom-4 right-4 flex flex-col items-center space-y-4 md:space-y-6">
+        <div className="fixed bottom-4 right-4 flex flex-col items-center space-y-4 md:space-y-6">
         {/* Button for WhatsApp */}
         <a
           href="https://wa.me/7439120030"
@@ -193,6 +191,10 @@ const Header1 = () => {
           </svg>
         </a>
       </div>
+      </div>
+
+
+    </div>
     </div>
   );
 };

@@ -22,9 +22,8 @@ const Navbar = () => {
           <nav className="hidden md:flex space-x-4">
             {[
               "Domains",
-              "Websites and Hosting",
-              "Email",
-              "Security",
+              "Websites",
+              "Hosting",
               "Marketing",
               "Pricing",
               "Contact Us",
@@ -36,7 +35,7 @@ const Navbar = () => {
                   <a
                     key={item}
                     href="#contact"
-                    className="block text-gray-800 hover:text-gray-700 cursor-pointer"
+                    className="block text-gray-800 font-bold hover:text-gray-700 cursor-pointer"
                   >
                     {item}
                   </a>
@@ -46,7 +45,7 @@ const Navbar = () => {
                   <a
                     key={item}
                     href="#mobile"
-                    className="block text-gray-800 hover:text-gray-700 cursor-pointer"
+                    className="block text-gray-800 font-bold hover:text-gray-700 cursor-pointer"
                   >
                     {item}
                   </a>
@@ -55,7 +54,7 @@ const Navbar = () => {
                 return (
                   <span
                     key={item}
-                    className="block text-gray-800 hover:text-gray-700 cursor-pointer"
+                    className="block text-gray-800 font-bold hover:text-gray-700 cursor-pointer"
                   >
                     {item}
                   </span>

@@ -2,6 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
+    <div>
     <section id="about">
     <div className="bg-gray-50 py-8 px-4 md:px-8 lg:px-7">
       <div className="container mx-auto text-center">
@@ -231,6 +232,7 @@ const Header = () => {
       </div>
     </div>
     </section>
+    </div>
   );
 };
 

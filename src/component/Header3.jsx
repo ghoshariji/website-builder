@@ -34,7 +34,8 @@ const Accordion = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto my-8">
+    <div>
+    <div className="max-w-7xl mx-auto my-6">
       {accordionData.map((item, index) => (
         <div key={index} className="border-b border-gray-200 mb-4">
           {/* Question Section */}
@@ -56,6 +57,7 @@ const Accordion = () => {
           )}
         </div>
       ))}
+    </div>
     </div>
   );
 };
