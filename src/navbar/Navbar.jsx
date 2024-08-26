@@ -13,10 +13,10 @@ const Navbar = () => {
     <div>
       <header className="bg-white shadow z-50 relative">
         <div className="container mx-auto py-4 flex justify-between items-center px-4 md:px-0">
-          <a href="/" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img src={navbar} alt="GoDaddy Logo" className="h-8 pl-4" />
             <span className="ml-2 text-xl font-bold">GrowUpNow</span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-4">

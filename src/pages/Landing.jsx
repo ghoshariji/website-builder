@@ -9,13 +9,16 @@ import Accordion from "../component/Header3";
 import ContactPage from "../component/Header4";
 import Mobile from "../component/Mobile";
 import Website from "../component/Website";
+import Pricing from "../component/Pricing";
 
 const Landing = () => {
   return (
     <>
       <Navbar />
       <Header1 />
+      <Pricing />
       <Header />
+     
       <Mobile />
       <Header2 />
       
