@@ -1,10 +1,12 @@
 import React from "react";
 import navbar from "../assets/navbar.jpeg";
 import { Link } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
 
 const Navbar = () => {
   return (
     <div>
+      <ToastContainer />
       <header>
         <div className="relative z-20 border-b bg-white">
           <div className="px-6 md:px-12 lg:container lg:mx-auto lg:px-6 lg:py-4">
@@ -53,6 +55,7 @@ const Navbar = () => {
                       ].map((item, index) => (
                         <li
                           key={item}
+                          onClick={() => toast.success("Coming Soon")}
                           className={`ml-8 mt-8 justify-center transition-opacity duration-500 ease-out transform peer-checked:opacity-100 peer-checked:translate-x-0 ${
                             index === 0
                               ? "delay-[100ms]"
@@ -101,7 +104,7 @@ const Navbar = () => {
                     "Help",
                     "Sign In",
                   ].map((item) => (
-                    <li key={item}>
+                    <li key={item} onClick={() => toast.success("Coming Soon")}>
                       <Link
                         to="/"
                         className="group relative before:absolute

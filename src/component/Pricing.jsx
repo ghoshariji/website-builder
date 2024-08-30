@@ -67,6 +67,7 @@ const Pricing = () => {
   ];
 
   return (
+    <section id="pricing">
     <div className="bg-white py-12">
       <div className="max-w-7xl mx-auto text-center">
         <h1 className="text-3xl font-bold text-gray-800">
@@ -170,6 +171,7 @@ const Pricing = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 
