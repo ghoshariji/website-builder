@@ -35,7 +35,7 @@ const ContactPage = () => {
         <ToastContainer />
         <div className="py-8 px-2 sm:px-4  lg:px-4">
           <h1 className="text-3xl font-bold mb-4 flex flex-center justify-center">
-            Contact Us
+          Let's Build Together
           </h1>
 
           <div className="flex flex-col md:flex-row items-center gap-8 mt-8">
