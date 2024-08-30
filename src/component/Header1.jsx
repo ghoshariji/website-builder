@@ -39,7 +39,7 @@ const Header1 = () => {
   return (
     <div>
       <div className="Maindada">
-        <section className="homedada" id="homedada">
+        {/**<section className="homedada" id="homedada">
           <div className="contentdada">
             <h3 className="text-3xl font-bold mb-3 lg:mt-20 m-2">
               Empowering Your Digital Presence
@@ -68,7 +68,7 @@ const Header1 = () => {
               className="w-full lg:w-1/2 object-cover"
             />
           </div>
-        </section>
+        </section>**/}
 
         <div className="containerdada flex flex-wrap gap-8 p-6">
           <div className="counterdada flex flex-col items-center text-center">

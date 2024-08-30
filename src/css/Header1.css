@@ -43,7 +43,7 @@
    
 }
 
-.homedada .contentdada{
+/* .homedada .contentdada{
     padding: 1rem;
     flex: 1 1 50%;
     order: 1;
@@ -65,7 +65,7 @@
    margin-left: 0.5rem;
    animation: zoomInAndMove 2s infinite;
 }
-
+/* 
 @keyframes zoomInAndMove {
     0% {
         transform: scale(1) translateY(0);
@@ -79,10 +79,10 @@
         transform: scale(1) translateY(0);
         opacity: 0.5;
     }
-}
+} */
 
 
-.btn{
+/* .btn{
     display: inline-block;
     margin-top: 1rem;
     padding: .7rem 1.2rem;
@@ -107,7 +107,7 @@
 .homedada .contentdada .btn:hover{
     color: #fff;
     background: none;
-}
+}  */
 
 
 .containerdada{
@@ -253,16 +253,3 @@
 }
 
 
-/* $document.ready(function(){
-    $('.numberdada').each(function(){
-        $(this).prop('Counter',0).animate({
-            Counter:$(this).text();
-        },{
-            duration:4000,
-            easing:'swing',
-            step:function(now){
-                $(this).text(Math.ceil(now) + '+');
-            }
-        })
-    })
-}) */

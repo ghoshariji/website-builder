@@ -1,4 +1,5 @@
 import React from "react";
+import AnimatedImageSlider from "../component/AnimatedImageSlider"
 import Header1 from "../component/Header1";
 import Header2 from "../component/Header2";
 import Header from "../component/Header";
@@ -15,6 +16,7 @@ const Landing = () => {
   return (
     <>
       <Navbar />
+      <AnimatedImageSlider/>
       <Header1 />
       <Pricing />
       <Header />
