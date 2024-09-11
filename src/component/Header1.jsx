@@ -1,11 +1,8 @@
 import React, { useEffect } from "react";
 import $ from "jquery";
 import header1 from "../assets/header1.jpeg";
-import marketing from "../assets/marketing-campaign-image.png";
 import toast, { Toaster } from "react-hot-toast";
 import { Link as ScrollLink } from "react-scroll";
-import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 import "../css/Header1.css";
 const Header1 = () => {
   useEffect(() => {
@@ -39,36 +36,6 @@ const Header1 = () => {
   return (
     <div>
       <div className="Maindada">
-        {/**<section className="homedada" id="homedada">
-          <div className="contentdada">
-            <h3 className="text-3xl font-bold mb-3 lg:mt-20 m-2">
-              Empowering Your Digital Presence
-            </h3>
-            <p className="text-lg text-gray-700 mb-6">
-              We offer tailored solutions that align with your specific needs,
-              whether it’s through digital marketing, strategic planning, or
-              enhancing operational efficiency. We specialize in creating custom
-              websites and mobile applications that drive growth and engagement
-              for businesses of all sizes. Whether you're looking to establish
-              your online presence or expand with advanced digital solutions,
-              we're here to help.
-            </p>
-            <a
-              href="#contact"
-              className="btn bg-black text-white py-3 px-6 rounded-full font-semibold transition hover:bg-gray-800"
-            >
-              Getting Started
-            </a>
-          </div>
-
-          <div className="imagedada">
-            <img
-              src={marketing}
-              alt="Marketing"
-              className="w-full lg:w-1/2 object-cover"
-            />
-          </div>
-        </section>**/}
 
         <div className="containerdada flex flex-wrap gap-8 p-6">
           <div className="counterdada flex flex-col items-center text-center">

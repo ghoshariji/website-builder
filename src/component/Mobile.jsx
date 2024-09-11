@@ -1,7 +1,7 @@
 import React from "react";
 import mobile from "../assets/mobile.jpeg";
 import { ScrollLink } from "react-scroll";
-import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
+//import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 
 const Mobile = () => {
   return (
@@ -18,11 +18,11 @@ const Mobile = () => {
             </p>
             {/* Rating System */}
             <div className="flex justify-center items-center mt-4">
+              {/* <FaStar className="text-yellow-500 w-6 h-6" />
               <FaStar className="text-yellow-500 w-6 h-6" />
               <FaStar className="text-yellow-500 w-6 h-6" />
               <FaStar className="text-yellow-500 w-6 h-6" />
-              <FaStar className="text-yellow-500 w-6 h-6" />
-              <FaStarHalfAlt className="text-yellow-500 w-6 h-6" />
+              <FaStarHalfAlt className="text-yellow-500 w-6 h-6" /> */}
               <span className="ml-2 text-lg text-gray-700">4.5/5</span>
             </div>
           </div>
