@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import AnimatedImageSlider from "../component/AnimatedImageSlider"
 import Header1 from "../component/Header1";
 import Header2 from "../component/Header2";
@@ -11,16 +11,29 @@ import ContactPage from "../component/Header4";
 import Mobile from "../component/Mobile";
 import Website from "../component/Website";
 import Pricing from "../component/Pricing";
+import Hero from "../component/Hero";
+import Loader from "../component/Loader";
 
 const Landing = () => {
+  const [loading,setLoading] = useState(true)
+
+  useEffect(()=>{
+    setTimeout(() => {
+      setLoading(false)
+    }, 1500);
+  },[])
   return (
     <>
       <Navbar />
-      <AnimatedImageSlider/>
+      {/* <AnimatedImageSlider/> */}
+      {loading ? <Loader /> : null}
+      <Hero />
+      
       <Header1 />
       <Pricing />
       <Header />
-     
+      
+
       <Mobile />
       <Header2 />
       

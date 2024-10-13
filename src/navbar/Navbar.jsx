@@ -50,8 +50,7 @@ const Navbar = () => {
                         "Marketing",
                         "Pricing",
                         "Contact Us",
-                        "Help",
-                        "Sign In",
+ 
                       ].map((item, index) => (
                         <li
                           key={item}
@@ -80,14 +79,23 @@ const Navbar = () => {
                     </ul>
 
                     <div className="border-t py-8 px-6 md:px-12 md:py-16 lg:border-t-0 lg:border-l lg:py-0 lg:pr-0 lg:pl-6">
-                      <Link
-                        to="/"
-                        className="block px-6 py-3 rounded-full
-        bg-gradient-to-r from-sky-600 to-cyan-400 text-center
-        text-white"
+                    <button className="cssbuttons-io-button">
+                    Get started
+                    <div className="icon">
+                      <svg
+                        height="24"
+                        width="24"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        Get started
-                      </Link>
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                          d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </button>
                     </div>
                   </div>
                 </div>
@@ -101,8 +109,7 @@ const Navbar = () => {
                     "Marketing",
                     "Pricing",
                     "Contact Us",
-                    "Help",
-                    "Sign In",
+                   
                   ].map((item) => (
                     <li key={item} onClick={() => toast.success("Coming Soon")}>
                       <Link
@@ -122,12 +129,23 @@ const Navbar = () => {
                   ))}
                 </ul>
                 <div className="ml-6">
-                  <Link
-                    to="/"
-                    className="block px-6 py-3 rounded-full bg-gradient-to-r from-sky-600 to-cyan-400 text-center text-white"
-                  >
+                  <button className="cssbuttons-io-button">
                     Get started
-                  </Link>
+                    <div className="icon">
+                      <svg
+                        height="24"
+                        width="24"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                          d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
             </div>

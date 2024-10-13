@@ -1,18 +1,12 @@
 import React, { useState } from "react";
 import Marquee from "react-fast-marquee";
 import "../css/Header2.css";
-import a from "../assets/responsive image.png";
-import b from "../assets/Ecommerce.jpg";
-import c from "../assets/Blogging.webp";
-import d from "../assets/Job-portal.jpg";
-import e from "../assets/portfolio.jpg";
-import f from "../assets/Tiket.jpg";
-import l from "../assets/one.png";
-import g from "../assets/Boeing.png";
-import h from "../assets/cisco.png";
-import i from "../assets/Penn.png";
-import j from "../assets/seven.png";
-import k from "../assets/ten.png";
+import a from "../assets/website/ai-dash.jpg";
+import b from "../assets/website/ailogin.png";
+import c from "../assets/website/mobile-dash'.jpg";
+import d from "../assets/website/movie.png";
+import e from "../assets/website/travel.png";
+import f from "../assets/website/upre.png";
 
 const Header2 = () => {
   const [isPaused, setIsPaused] = useState(false);
@@ -41,7 +35,7 @@ const Header2 = () => {
             <img src={b} alt="Ecommerce" />
           </div>
 
-          <div className="image-wrapper">
+          <div className="image-wrapper" >
             <img src={c} alt="Blogging" />
           </div>
 
